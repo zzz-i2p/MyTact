@@ -20,7 +20,7 @@ setup (
 	version = '1.0.0',
 	packages = find_packages(), # list of all packages
     install_requires = install_requires,
-    python_requires='>=2.7', # any python greater than 2.7
+    python_requires='>=3.7', # any python greater than 3.7
 	entry_points='''
         [console_scripts]
         mytact=mytact.__main__:main
@@ -29,10 +29,10 @@ setup (
 	keyword="pyinquirer, click, snap, cli, cla, contacts, mytact",
 	long_description=long_description,
     license='MIT',
-    url='https://github.com/CITGuru/MyTact/',
+    url='https://github.com/zzz-i2p/MyTact/',
 	download_url='https://github.com/CITGuru/MyTact/archive/1.0.0.tar.gz',
     dependency_links=dependency_links,
-    author_email='oyetoketoby80@gmail.com',
+    author_email='z@myzzz.org',
 
 
 	)
