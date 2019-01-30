@@ -1,143 +1,142 @@
 # MyTact
 
-A simple cli for managing contacts
+Простой CLI для управления контактами
 
-# Installation
+# Установка
 
-Clone this github repo
+Клонировать этот репозиторий GitHub
 
 ```bash
 $ git clone https://github.com/citguru/mytact
 $ cd mytact
 ```
-Create a virtualenv
+Создать виртуальное окружение
 
 ```bash
 $ mkvirtualenv mytactenv
 $ workon mytactenv
 ```
 
-Install Python Libraries
+Установите Библиотеки Python 
 
 ```bash
 $ pip install -r requirements.txt
 ```
-Or
+Или
 
 ```bash
 $ pip install mytact
 ```
 
-# Usage
+# Использование
 
 ```bash
 $ python mytact.py --help
 ```
 
-## Add
+## Добавить
 
 ```bash
 $ python mytact.py add
 ```
 
-With arguments
+С аргументами
 
 ```bash
 $ python mytact.py add <firstname> <lastname> <email> <phone>
 ```
-
-E.g
+Например
 
 ```bash
 $ python mytact.py add Oyetoke Toby oyetoketoby80@gmail.com 08182315466
 ```
 
-## Update
+## Обновление
 
 ```bash
 $ python mytact.py update
 ```
 
-or
+или
 
 ```bash
 $ python mytact.py update --id <ID>
 ```
 
-E.g 
+Например
 ```bash
 $ python mytact.py update --id 8686
 ```
 
-With options
+Варианты
 
 ```bash
 $ python mytact.py update --id <ID> --firstname <firstname> --lastname <lastname>
 ```
 
-E.g
+Например
 
 ```bash
 $ python mytact.py update --id 8686 --firstname Oyetoke --lastname Toby
 ```
 
-## List
+## Список
 
 ```bash
 $ python mytact.py list
 ```
-or
+или
 
 ```bash
 $ python mytact.py list <len:int>
 ```
-E.g
+Например
 ```bash
 $ python mytact.py list 2
 ```
 
-## Find
+## Найти
 
 ```bash
 $ python mytact.py find
 ```
 
-or
+или
 
 ```bash
 $ python mytact.py find <query>
 ```
 
-E.g 
+Например
 ```bash
 $ python mytact.py find Toby
 ```
 
-With options
+Варианты
 
 ```bash
-$ python mytact.py find --firstname <firstname> 
+$ python mytact.py find --firstname <firstname>
 ```
 
-E.g
+Например
 
 ```bash
 $ python mytact.py find --firstname Oyetoke
 ```
 
-## Delete
+## Удалить
 
 ```bash
 $ python mytact.py delete
 ```
 
-With options
+Варианты
 
 ```bash
-$ python mytact.py delete --id <ID> 
+$ python mytact.py delete --id <ID>
 ```
 
-E.g
+Например
 
 ```bash
 $ python mytact.py delete --id 86800
